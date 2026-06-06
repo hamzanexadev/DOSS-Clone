@@ -1,0 +1,27 @@
+
+> doss-clone@2.0.0 dev
+> next dev --webpack --port 3000
+
+▲ Next.js 16.2.4 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.103:3000
+✓ Ready in 1622ms
+
+○ Compiling / ...
+ GET / 200 in 17.6s (next.js: 16.0s, application-code: 1618ms)
+ GET / 200 in 149ms (next.js: 9ms, application-code: 140ms)
+○ Compiling /_not-found ...
+ GET /assets/fonts/PPNeueMontreal-Medium-0qsiMyyJ.woff2 404 in 4.1s (next.js: 3.8s, application-code: 281ms)
+ GET /js/app-init-CSk-Mdqi.js 404 in 129ms (next.js: 6ms, application-code: 123ms)
+ GET / 200 in 216ms (next.js: 25ms, application-code: 192ms)
+ GET / 200 in 1179ms (next.js: 233ms, application-code: 946ms)
+ GET /assets/fonts/PPNeueMontreal-Medium-0qsiMyyJ.woff2 404 in 497ms (next.js: 59ms, application-code: 437ms)
+ GET / 200 in 239ms (next.js: 9ms, application-code: 230ms)
+ GET /js/app-init-CSk-Mdqi.js 404 in 206ms (next.js: 15ms, application-code: 191ms)
+ GET / 200 in 540ms (next.js: 9ms, application-code: 531ms)
+ GET / 200 in 562ms (next.js: 190ms, application-code: 372ms)
+ GET /assets/fonts/PPNeueMontreal-Medium-0qsiMyyJ.woff2 404 in 268ms (next.js: 11ms, application-code: 257ms)
+ GET / 200 in 184ms (next.js: 7ms, application-code: 177ms)
+ GET /js/app-init-CSk-Mdqi.js 404 in 141ms (next.js: 5ms, application-code: 136ms)
+ GET / 200 in 270ms (next.js: 8ms, application-code: 262ms)
+[?25h

@@ -1,0 +1,1 @@
+import{g as i}from"./index-CH_iu5NA.js";import{S as r}from"./ScrollTrigger-BNcmxiav.js";i.registerPlugin(r);r.config({ignoreMobileResize:!0});r.isTouch;const g=e=>r.create({anticipatePin:e.pin?1:0,...e});export{g as c};

@@ -1,0 +1,6 @@
+2026/04/23-16:27:16.058 c2c Reusing MANIFEST E:\DOSS Clone\.edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/04/23-16:27:16.087 c2c Recovering log #4
+2026/04/23-16:27:16.108 c2c Reusing old log E:\DOSS Clone\.edge-profile\Default\EdgeCoupons/coupons_data.db/000004.log 
+2026/04/23-16:27:16.456 245c Level-0 table #8: started
+2026/04/23-16:27:16.465 245c Level-0 table #8: 682280 bytes OK
+2026/04/23-16:27:16.467 245c Delete type=0 #4

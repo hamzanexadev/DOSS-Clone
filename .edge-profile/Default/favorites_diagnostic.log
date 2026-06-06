@@ -1,0 +1,14 @@
+2026-04-23 11:26:22.735: [INFO] OnDoneLoading sync enabled: 0
+2026-04-23 11:26:22.742: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-04-23 11:26:23.113: [INFO] VisibilityChanged: 0
+2026-04-23 11:26:25.377: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-04-23 11:26:25.388: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-04-23 11:26:25.394: [INFO] Primary account changed.
+2026-04-23 11:26:25.394: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-04-23 11:26:25.409: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-04-23 11:27:13.839: [INFO] OnDoneLoading sync enabled: 1
+2026-04-23 11:27:14.107: [INFO] VisibilityChanged: 0
+2026-04-23 11:27:16.787: [INFO] Sync initialization duration: 2810ms
+2026-04-23 11:31:25.520: [INFO] OnDoneLoading sync enabled: 1
+2026-04-23 11:31:25.779: [INFO] VisibilityChanged: 0
+2026-04-23 11:31:25.917: [INFO] Sync initialization duration: 31ms

@@ -1,0 +1,1 @@
+import"./view.astro_astro_type_script_index_0_lang-BX_3mMn-.js";

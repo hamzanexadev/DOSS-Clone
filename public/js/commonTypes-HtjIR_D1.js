@@ -1,0 +1,1 @@
+var e=(r=>(r.Header="header",r.Footer="footer",r.MobileMenu="mobile-menu",r.Preloader="preloader",r.TransitionCard="transition-card",r.CommonFilters="common-filters",r.AccordionsList="accordions-list",r.ResourcesPageContent="resources-page-content",r.ListPosts="list-posts",r))(e||{});export{e as C};
