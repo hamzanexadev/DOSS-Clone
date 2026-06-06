@@ -4,7 +4,8 @@
   "version": "2.0.0",
   "description": "Next.js rebuild of the current doss.com homepage with a local reference mirror.",
   "scripts": {
-    "dev": "next dev --webpack",
+    "dev": "node server.mjs",
+    "next:dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "node server.mjs",
     "mirror": "node scripts/mirror-doss.mjs",
