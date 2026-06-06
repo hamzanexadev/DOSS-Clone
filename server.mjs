@@ -1,5 +1,5 @@
 import { createReadStream } from 'node:fs';
-import { access, stat } from 'node:fs/promises';
+import { access, readFile, stat } from 'node:fs/promises';
 import http from 'node:http';
 import path from 'node:path';
 
@@ -31,6 +31,15 @@ const MIME_TYPES = {
   '.xml': 'application/xml; charset=utf-8',
 };
 
+function normalizeMirroredHtml(html) {
+  return html
+    .replace(/\bdropdown-open\b/g, '')
+    .replace(
+      '</head>',
+      '<style>#home-announcement-modal{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}</style><script>try{window.sessionStorage.setItem("home-announcement-seen","1")}catch(e){}</script></head>'
+    );
+}
+
 async function resolveFile(requestPath) {
   const decodedPath = decodeURIComponent(requestPath);
   const normalizedPath = path.normalize(decodedPath).replace(/^(\.\.[/\\])+/, '');
@@ -61,6 +70,13 @@ const server = http.createServer(async (req, res) => {
     await access(candidatePath);
     const extension = path.extname(candidatePath).toLowerCase();
     const contentType = MIME_TYPES[extension] || 'application/octet-stream';
+
+    if (extension === '.html') {
+      const html = await readFile(candidatePath, 'utf8');
+      res.writeHead(200, { 'Content-Type': contentType });
+      res.end(normalizeMirroredHtml(html));
+      return;
+    }
 
     res.writeHead(200, { 'Content-Type': contentType });
     createReadStream(candidatePath).pipe(res);
