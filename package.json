@@ -2,21 +2,13 @@
   "name": "doss-clone",
   "private": true,
   "version": "2.0.0",
-  "description": "Next.js rebuild of the current doss.com homepage with a local reference mirror.",
+  "description": "Static local mirror of doss.com for Netlify deployment.",
   "scripts": {
     "dev": "node server.mjs",
-    "next:dev": "next dev --webpack",
     "build": "node scripts/normalize-static-mirror.mjs",
-    "next:build": "next build --webpack",
     "start": "node server.mjs",
     "mirror": "node scripts/mirror-doss.mjs",
     "mirror:local": "node scripts/mirror-doss.mjs --rewrite-local",
     "serve:mirror": "node server.mjs"
-  },
-  "dependencies": {
-    "lottie-web": "latest",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
   }
 }
