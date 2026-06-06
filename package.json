@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node server.mjs",
     "next:dev": "next dev --webpack",
-    "build": "next build --webpack",
+    "build": "node scripts/normalize-static-mirror.mjs",
+    "next:build": "next build --webpack",
     "start": "node server.mjs",
     "mirror": "node scripts/mirror-doss.mjs",
     "mirror:local": "node scripts/mirror-doss.mjs --rewrite-local",
